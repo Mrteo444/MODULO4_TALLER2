@@ -1,0 +1,52 @@
+/* Centrar los elementos dentro de la fila */
+.row {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    flex-wrap: wrap; /* Para que las tarjetas hagan wrap en filas */
+    margin-top: 20px;
+  }
+  
+  /* Aumentar el tamaño de las columnas para hacerlas más grandes */
+  .col-md-3 {
+    flex: 0 0 30%; /* Ocupa más espacio (30% de ancho) */
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Añadir más espacio entre tarjetas */
+  }
+  
+  /* Estilos para el contenedor de la tarjeta (thumbnail) */
+  .thumbnail {
+    width: 100%;
+    max-width: 350px; /* Hacer más grande el contenedor */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Añadir una sombra más pronunciada */
+    transition: transform 0.3s ease; /* Efecto suave al hacer hover */
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.08); /* Aumenta ligeramente el tamaño al hacer hover */
+  }
+  
+  .thumbnail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+  }
+  
+  /* Centrar el texto y aumentar el tamaño de los títulos */
+  .caption h2, .caption h3 {
+    text-align: center; /* Centrar el texto */
+    margin: 15px 0;
+    font-size: 1.4em; /* Aumentar el tamaño del texto */
+  }
+  
+  /* Aumentar el espaciado entre los elementos de la tarjeta */
+  .caption {
+    padding-top: 10px;
+  }
+  

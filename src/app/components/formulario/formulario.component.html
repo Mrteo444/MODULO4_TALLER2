@@ -1,0 +1,25 @@
+<form (ngSubmit) ="guardar(fomrulario)" #fomrulario="ngForm">
+    <label>Ingrese placa</label>
+    <input type="text" placeholder="Ej: 1234567890"  name="id"[(ngModel)]="id">
+
+    
+    <label>Ingrese Marca</label>
+    <input type="text" placeholder="Ej: Juan Pérez" name="marca"[(ngModel)]="marca">
+    
+    <label>Ingrese modelo</label>
+    <input type="text" placeholder="Ej: 25" name="modelo"[(ngModel)]="modelo">
+
+    <label>Ingrese año</label>
+    <input type="number" placeholder="Ej: 25" name="anio"[(ngModel)]="anio">
+    
+    <label>Ingrese trasnmision</label>
+    <select name="trans"[(ngModel)]="trans">
+        <option value="masculino" >manual</option>
+        <option value="femenino" >automatico</option>
+    </select>
+
+    <label>Ingrese link de la imagen</label>
+    <input type="text" placeholder="Ej: 25" name="imagen"[(ngModel)]="imagen">
+
+    <button type="submit">Enviar</button>
+</form>
